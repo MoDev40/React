@@ -1,0 +1,92 @@
+//Makin your own custom hook 
+//1 nameReducer.js file inside this file you need initialstate
+
+export const initialstate ={
+    names:[]
+}
+
+//and then declare reducer, it takes state,action.
+
+//action have type and payload properties
+
+const nameReducer = (state,action)=>{
+
+    const {type,payload} = action
+
+    //use switch because we don't know what type is
+
+    switch(type){
+        case"ADD_NAME":
+        return{
+		//...state it means take me what in inside state , note state is initialstate
+            ...state,
+
+		//name:payload add names what payload have
+            names:payload
+        }
+        default:
+            throw new Error("UnKnown")
+    } 
+}
+
+//export reducer
+export default nameReducer
+
+//2 NameContex.js file inside this file you need to import these
+
+import nameReducer , { initialstate } from "./nameReducer"
+import {createContext,useReducer,useContext} from 'react'
+
+// createContext and pass initialstate
+const NameContext = createContext(initialstate)
+
+// declare provider
+export const NamesProvider = ({children})=>{
+
+// use reducer and pass nameReducer,initialstate and then you have these 2 properties
+const [state,dispatch] = useReducer(nameReducer,initialstate)
+
+// declare a add function
+    const addName = (name)=>{
+        //concating latestName to previos name
+        const latestName = state.names.concat(name)
+        dispatch({
+            // type and switch must be same
+            type:"ADD_NAME",
+            payload:latestName
+        })
+    }
+
+    //values you will pass function and more
+    const values = {
+        names:state.names,
+        addName,
+    }
+
+    return <NameContext.Provider value={values}>
+        { children}
+    </NameContext.Provider>
+}
+
+// using context 
+const useNames =()=>{
+    const context = useContext(NameContext)
+    if(context === undefined){
+        throw new Error("unDefined!")
+    }
+    return context
+}
+export default useNames
+
+index.js file
+wrap NamesProvider and then use all component
+    <NamesProvider>
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>
+    </NamesProvider>
+
+when you use import useNames 
+import useNames from '../../NameContex'
+const {addName} = useCars()
+

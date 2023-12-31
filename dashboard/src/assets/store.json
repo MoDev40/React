@@ -1,0 +1,91 @@
+[
+    {
+        "id":1,
+        "Fueltype":"Petrol",
+        "name": "Dzire",
+        "price": 1,
+        "rate":"6.8",
+        "imgUrl":"./images/dzire.JPG"
+        
+    },
+    {
+        "id":2,
+        "Fueltype":"Petrol",
+        "name": "Eeco",
+        "price": 1,
+        "rate":"6.8",
+        "imgUrl":"./images/Eeco.JPG"
+    },
+    {
+        "id":3,
+        "Fueltype":"Petrol",
+        "name": "WagonR",
+        "price": 1,
+        "rate":"7.8",
+        "imgUrl":"./images/wagonR.JPG"
+        
+    },
+    {
+        "id":4,
+        "Fueltype":"Petrol",
+        "name": "Ignis",
+        "price": 1,
+        "rate":"7.0",
+        "imgUrl":"./images/ignis.JPG"
+        
+    },
+    {
+        "id":5,
+        "Fueltype":"Petrol",
+        "name": "Ciaz",
+        "price": 1,
+        "rate":"6.9",
+        "imgUrl":"./images/ciaz.JPG"
+        
+    },
+    {
+        "id":6,
+        "Fueltype":"Petrol",
+        "name": "Swift",
+        "price": 1,
+        "rate":"7.0",
+        "imgUrl":"./images/swift.JPG"
+        
+    },
+    {
+        "id":7,
+        "Fueltype":"Petrol",
+        "name": "Jimny",
+        "price": 1,
+        "rate":"7.5",
+        "imgUrl":"./images/jimny.JPG"
+        
+    },
+    {
+        "id":8,
+        "Fueltype":"Petrol",
+        "name": "Spresso",
+        "price": 1,
+        "rate":"8.3",
+        "imgUrl":"./images/spresso.JPG"
+        
+    },
+    {
+        "id":9,
+        "Fueltype":"Petrol",
+        "name": "Alto K10",
+        "price": 1,
+        "rate":"7.9",
+        "imgUrl":"./images/alto.JPG"
+        
+    },
+    {
+        "id":10,
+        "Fueltype":"Petrol",
+        "name": "Baleno",
+        "price": 1,
+        "rate":"8.9",
+        "imgUrl":"./images/baleno.JPG"
+        
+    }
+]

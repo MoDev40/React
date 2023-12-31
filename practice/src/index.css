@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-poppins
+    } 
+}
+@layer components {
+    .navs{
+        @apply  hover:bg-slate-500 font-bold   hover:duration-500 lg:hover:delay-75 lg:hover:translate-x-0 hover:py-1 hover:text-[#fff] hover:px-3 rounded
+    }
+}

@@ -1,0 +1,3 @@
+Responsive app with help tailwind 
+notes app using Auth ,cookie and token 
+duraan ali's server as backend

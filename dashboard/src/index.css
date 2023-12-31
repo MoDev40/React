@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-Poppins 
+    }
+}
+@layer components{
+    .itemsCon{
+        @apply flex flex-col items-center
+    }
+    .heading{
+        @apply font-bold text-xl
+    }
+    .info{
+        @apply text-[#333333bb] capitalize
+    }
+    .icon{
+        @apply w-[30px] h-[30px] text-[#fff] bg-[#000]  px-2 py-1 rounded-full items-center justify-center hover:bg-[#0f4c0f73]
+    }
+    .image{
+        @apply  h-[200px] p-6 shadow opacity-100 bg-[#fff] rounded
+    }
+    .boxes{
+        @apply bg-[#cccccc7d] p-1 rounded w-[90%] mx-auto md:w-[70%] lg:w-[80%]
+    }
+    .box{
+        @apply flex flex-col space-y-3 p-3 
+    }
+    .boxicons{
+        @apply bg-[#fff] rounded w-8 h-8 p-2
+    }
+    .boxhead{
+        @apply font-bold text-xl capitalize
+    }
+    .boxpara{
+        @apply text-[#333333bb] w-full h-full
+    }
+    .navs{
+        @apply  hover:bg-slate-500  hover:duration-500 lg:hover:delay-75 lg:hover:translate-x-0 hover:py-1 hover:text-[#fff] hover:px-3 rounded
+    }
+    .btn{
+        @apply font-light bg-[#09370983] rounded text-[#fff] py-1 px-2
+    }
+    .hovered{
+        @apply  hover:bg-slate-500
+    }
+}
